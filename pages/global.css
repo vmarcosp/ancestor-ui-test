@@ -1,0 +1,19 @@
+html,
+body,
+#__next {
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  object-fit: cover;
+}

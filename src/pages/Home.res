@@ -2,14 +2,18 @@ module AncestorCustom = Ancestor.Make(
   Ancestor.Defaults.Breakpoints,
   {
     type colors = [
+      | #white
+      | #gray
+      | #gray200
       | #primary
-      | #secondary
     ]
 
     let colors = token =>
       switch token {
-      | #primary => #hex("#f36")
-      | #secondary => #hex("#ccc")
+      | #white => #hex("#fafafa")
+      | #gray => #hex("#f2f2f2")
+      | #gray200 => #hex("#556170")
+      | #primary => #hex("#0da5e9")
       }
   },
   Ancestor.Defaults.Spacing,
@@ -19,41 +23,55 @@ module AncestorCustom = Ancestor.Make(
 
 open AncestorCustom
 
-module Square = {
-  let square = AncestorCustom.Css.css({
-    bgColor: {
-      xs: #primary,
-      md: #secondary,
-    },
-    p: {xs: 1, md: 3},
-    width: {
-      xs: #px(100),
-      sm: #px(300),
-    },
-    height: {
-      xs: #px(100),
-      md: #px(200),
-    },
-    _hover: {
-      bgColor: {xs: #primary},
-    },
-  })
-
-  @react.component
-  let make = () => {
-    <div className=square> {"Testing..."->React.string} </div>
-  }
-}
-
 @react.component
 let default = () => {
-  <Stack
-    _hover={bgColor: {md: #secondary}}
-    bgColor={xs: #secondary, md: #primary}
-    height={xs: #px(32)}
-    p={xs: 2}
-    borderRadius={xs: 1}
-    alignItems={md: #center}>
-    <Square />
-  </Stack>
+  <Box p={xs: 4, md: 8} display={xs: #flex} justifyContent={xs: #center}>
+    <Stack
+      pt={xs: 4, md: 0}
+      direction={xs: #vertical, md: #horizontal}
+      tag=#figure
+      m={xs: 0}
+      width={xs: 100.0->#pct, md: 664->#px}
+      overflow={xs: #hidden}
+      borderRadius={xs: 1}
+      alignItems={xs: #center}
+      bgColor={xs: #white}>
+      <Base
+        tag=#img
+        width={xs: 124->#px, md: 192->#px}
+        height={xs: 124->#px, md: 100.0->#pct}
+        borderRadius={xs: 10, md: 0}
+        src="https://tailwindcss.com/_next/static/media/sarah-dayan.a620c98f.jpg"
+      />
+      <Stack p={xs: 4} gap={xs: #one(2)} justifyContent={xs: #center}>
+        <Typography
+          textAlign={xs: #center, md: #left}
+          tag=#p
+          m={xs: 0}
+          fontSize={xs: 1.8->#rem}
+          lineHeight={xs: 2.8->#rem}
+          fontWeight={xs: #400}>
+          {`"Tawilding CSS is the only framework that I've seen scale on large teams. It's easy to customize, adapts to any design, and the build size is tiny."`->React.string}
+        </Typography>
+        <Stack tag=#figcaption>
+          <Typography
+            textAlign={xs: #center, md: #left}
+            fontSize={xs: 1.6->#rem}
+            lineHeight={xs: 2.8->#rem}
+            fontWeight={xs: #400}
+            color={xs: #primary}>
+            {"Sarah Dayan"->React.string}
+          </Typography>
+          <Typography
+            textAlign={xs: #center, md: #left}
+            fontSize={xs: 1.6->#rem}
+            lineHeight={xs: 2.8->#rem}
+            fontWeight={xs: #400}
+            color={xs: #gray200}>
+            {"Staff Engineer, Algolia"->React.string}
+          </Typography>
+        </Stack>
+      </Stack>
+    </Stack>
+  </Box>
 }
