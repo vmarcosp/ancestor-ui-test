@@ -36,6 +36,9 @@ module Square = {
       xs: #px(100),
       md: #px(200),
     },
+    _hover: {
+      bgColor: {xs: #primary},
+    },
   })
 
   @react.component
@@ -47,6 +50,7 @@ module Square = {
 @react.component
 let default = () => {
   <Stack
+    _hover={bgColor: {md: #secondary}}
     bgColor={xs: #secondary, md: #primary}
     height={xs: #px(32)}
     p={xs: 2}
