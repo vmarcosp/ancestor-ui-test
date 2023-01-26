@@ -23,6 +23,29 @@ module AncestorCustom = Ancestor.Make(
 
 open AncestorCustom
 
+/*
+ * Using the useCss(..) hook
+ */
+module Button = {
+  @react.component
+  let make = () => {
+    let {css} = AncestorCustom.useCss()
+    let button = css({
+      bgColor: {xs: #gray200},
+      color: {xs: #white},
+      height: {xs: #px(56)},
+      width: {xs: #px(124)},
+      borderRadius: {xs: 1},
+      px: {xs: 1},
+      _hover: {
+        bgColor: {xs: #gray},
+      },
+    })
+
+    <button className=button> {"Click here"->React.string} </button>
+  }
+}
+
 @react.component
 let default = () => {
   <Box p={xs: 4, md: 8} display={xs: #flex} justifyContent={xs: #center}>
