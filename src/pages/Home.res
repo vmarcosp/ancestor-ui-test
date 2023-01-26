@@ -1,9 +1,3 @@
-let defaultColors = token =>
-  switch token {
-  | #primary => #hex("#f36")
-  | #secondary => #hex("#ccc")
-  }
-
 module AncestorCustom = Ancestor.Make(
   Ancestor.Defaults.Breakpoints,
   {
@@ -12,7 +6,11 @@ module AncestorCustom = Ancestor.Make(
       | #secondary
     ]
 
-    let colors = defaultColors
+    let colors = token =>
+      switch token {
+      | #primary => #hex("#f36")
+      | #secondary => #hex("#ccc")
+      }
   },
   Ancestor.Defaults.Spacing,
   Ancestor.Defaults.Radius,
