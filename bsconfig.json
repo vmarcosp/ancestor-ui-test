@@ -9,9 +9,11 @@
     "module": "es6",
     "in-source": true
   },
-  "reason": {
-    "react-jsx": 3
-  },
+  "jsx": { "version": 4, "mode": "classic" },
   "suffix": ".mjs",
-  "bs-dependencies": ["@rescript/react", "@rescriptbr/ancestor"]
+  "bs-dependencies": [
+    "@rescript/react",
+    "@ancestor-ui/core",
+    "@ancestor-ui/css"
+  ]
 }

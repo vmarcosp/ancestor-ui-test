@@ -15,10 +15,9 @@
     "@emotion/css": "11.10.5",
     "@emotion/server": "11.10.0",
     "@greenlabs/ppx-ts": "0.1.11",
-    "@greenlabs/rescript-jest": "1.0.1",
     "@next/font": "13.1.1",
-    "@rescript/react": "0.10.3",
-    "@rescriptbr/ancestor": "1.0.0-5",
+    "@rescript/react": "0.11.0-rc.3",
+    "@ancestor-ui/core": "0.1.0",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",
@@ -26,6 +25,6 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "rescript": "10.0.1"
+    "rescript": "10.1.0"
   }
 }
