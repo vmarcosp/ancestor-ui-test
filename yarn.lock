@@ -7,18 +7,18 @@
   resolved "https://registry.yarnpkg.com/@ancestor-ui/bindings/-/bindings-0.1.0.tgz#c46611dffaac5dc9a99c178404e7410406811cf7"
   integrity sha512-XLys/UBO2uhVWx8UdzYpvqlPRGNEMhSAgPfOWwPKyPthepFw5MEqDDIhYmuKJqqYcw0FdAnnM1g3CBCCXBV9WQ==
 
-"@ancestor-ui/core@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@ancestor-ui/core/-/core-0.1.0.tgz#2d4e1f821d1774c58cb28ce9650410826028c4d6"
-  integrity sha512-OJaxuSE+o+ayCkvRu4rs3VuFHrWoz+zwIAN9TAWGQ6Tx23cLIVLR984t1kXMYCFMZ5Lki2GQwZ+FrJDbcE3CiQ==
+"@ancestor-ui/core@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ancestor-ui/core/-/core-0.3.0.tgz#4229b5fe7f33c324ba4f62cf0141dffd1ff0c95a"
+  integrity sha512-Zn7auKp1M3Snw2+Cj/CoS0+i1TBEl9+Z6q5PXIquP3itEEe0MfbHhPtEdBH01O6EbdBhM5Mil+yvA8em+aLFlQ==
   dependencies:
     "@ancestor-ui/bindings" "0.1.0"
-    "@ancestor-ui/css" "0.1.2"
+    "@ancestor-ui/css" "0.3.0"
 
-"@ancestor-ui/css@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@ancestor-ui/css/-/css-0.1.2.tgz#76239291273a4968ad29f921b07cff355e42c429"
-  integrity sha512-m7eZvyQZWqHoIy5V7Q/BRbJkHLDie1Cwk9M485eMAy5SEGT8VEwITy6mnoQPAjXCAwjMkwj5Mdo/ki2NByDCEg==
+"@ancestor-ui/css@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ancestor-ui/css/-/css-0.3.0.tgz#50c7c411bfe58347f8e71618ce2b3b27c9e3980e"
+  integrity sha512-GFiOmxJs5AUTIqI5VX0hRdBfcD1mrcY8rRBHt++pk7pLUXdHM9cdlxs1XkswEXPZGEtDfF0NBNnV5dNRny166w==
   dependencies:
     "@ancestor-ui/bindings" "*"
 
@@ -189,11 +189,6 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@greenlabs/ppx-ts@0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@greenlabs/ppx-ts/-/ppx-ts-0.1.11.tgz#99cdf97396128bd4879ee6c5add8d0e797a12641"
-  integrity sha512-onEXnjkWazZ6wyX8Ywm52cRYceb6T5KmxsALijPyGKU9Ipg0YE9XcSpdP/6j5MYaP3VwN9SzHBTu3iaPoIPoYg==
-
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"
@@ -328,10 +323,10 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
-"@rescript/react@0.11.0-rc.3":
-  version "0.11.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.11.0-rc.3.tgz#505b1ef91099f825f273f96edc92f576874a9369"
-  integrity sha512-ieG8mgZ72yiBWidoIAbSr7ZQZHyzNjaILGNHro7XUXlr/Y2MyQfgB3fyqN2XXZ5SCQ8JXmq03ajIpOn6IanV6A==
+"@rescript/react@0.11":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.11.0.tgz#d2545546d823bdb8e6b59daa1790098d1666f79e"
+  integrity sha512-RzoAO+3cJwXE2D7yodMo4tBO2EkeDYCN/I/Sj/yRweI3S1CY1ZBOF/GMcVtjeIurJJt7KMveqQXTaRrqoGZBBg==
 
 "@rushstack/eslint-patch@^1.1.3":
   version "1.2.0"
@@ -2039,10 +2034,10 @@ regexpp@^3.2.0:
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-3.2.0.tgz#0425a2768d8f23bad70ca4b90461fa2f1213e1b2"
   integrity sha512-pq2bWo9mVD43nbts2wGv17XLiNLya+GklZ8kaDLV2Z08gDCsGpnKn9BFMepvWuHCbyVvY7J5o5+BVvoQbmlJLg==
 
-rescript@10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/rescript/-/rescript-10.1.0.tgz#dfb7b862b25d74da9a8a3f90e1c7869cffd42b6e"
-  integrity sha512-85KLtBECo+hYwObbifXk5xpxUCUFMWgCR1w7hDDGhhXIXqEpHQ2ds6o++YPxzXjLuU1/qA7Iovq2zUX4opejQw==
+rescript@10.1.2:
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-10.1.2.tgz#ed3b8c762d6e22139803c16e765356685693e38c"
+  integrity sha512-PPdhOiN+lwqxQ0qvzHc1KW0TL12LDy2X+qo/JIMIP3bMfiH0vxQH2e/lXuoutWWm04fGQGTv3hWH+gKW3/UyfA==
 
 resolve-from@^4.0.0:
   version "4.0.0"
