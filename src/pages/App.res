@@ -11,3 +11,4 @@ let default = props => {
 
   {React.createElement(component, pageProps)}
 }
+

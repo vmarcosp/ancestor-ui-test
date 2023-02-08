@@ -14,6 +14,8 @@
   "bs-dependencies": [
     "@rescript/react",
     "@ancestor-ui/core",
-    "@ancestor-ui/css"
+    "@ancestor-ui/css",
+    "bs-css",
+    "bs-css-emotion"
   ]
 }

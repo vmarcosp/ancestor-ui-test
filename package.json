@@ -16,7 +16,7 @@
     "@emotion/server": "11.10.0",
     "@next/font": "13.1.1",
     "@rescript/react": "0.11",
-    "@ancestor-ui/core": "0.3.0",
+    "@ancestor-ui/core": "0.5.0",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",
